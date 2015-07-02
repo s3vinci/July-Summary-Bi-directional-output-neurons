@@ -7,4 +7,5 @@ From_the_nonlinear_transformation_we__.tex
 section_Spiking_Model_The_spiking__.tex
 figures/2xraster/2xraster.png
 We_simulate_a_typical_output__.tex
+figures/complete_sim_v/complete_sim_v.png
 figures/a_approach/a_approach.png
