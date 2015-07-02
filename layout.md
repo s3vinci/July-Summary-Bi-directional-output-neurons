@@ -5,6 +5,7 @@ Spiking_Model__.tex
 PNs_were_modelled_by_using__.tex
 From_the_nonlinear_transformation_we__.tex
 section_Spiking_Model_To_test__.tex
+figures/cassnaer/cassnaer.png
 figures/2xraster/2xraster.png
 We_simulate_a_typical_output__.tex
 figures/complete_sim_v/complete_sim_v.png
