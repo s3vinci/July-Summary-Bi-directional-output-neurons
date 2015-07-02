@@ -1,0 +1,47 @@
+From the nonlinear transformation we obtain  responses of 20 PNs from 20 different glomeruli. We subsequently triplicate the PNs to obtain 60 PNs (each glomerulus has ~3-5 PNs). By using a previous study that focused on connectivity \cite{23615618} we define the connectivity matrix $W_{PN-KC}$.  We subsequently calculate the odour responses for 2000 KCs which are known to be sparse across the population. 
+
+ $r_{KC} = w^{T}_{PN-KC}r_{PN}-APL$
+
+ \vspace{5 mm}
+
+ The inhibition parameter is calculated for each odour to ensure 5 \% sparseness across the population. This results in ~100 KCs responding to each odour. 
+
+
+ 
+ \vspace{5 mm}
+
+We pool the responses from 800 randomly selected KCs as the input to a single output neuron (M4$\beta$'). The weights are scaled unifrom random which makes the output neuron initial response to 110 odours to  vary between 6-7 Hz. To replicate the behaviour of the output neuron which shows bidirectional plasticity  \cite{25864636}, we introduce a learning rule which is gated by reward to simulate the effect of dopaminergic neurons which are believed to drive synaptic change through their phasic firing at the synapse between KCs and output neurons. 
+ \vspace{5 mm}
+$r_{ON}  = w^{T}_{KC-ON}r_{KC}$
+
+Thus, the change in synaptic weights is gated by the presence of a reward. Here, we devise a simple learning rule in which the sign of the weight change is controlled by the type of reward ( appetitive -1 or aversive +1). This is because the output neuron is believed to be signalling retreat behaviour. By decreasing its firing rate when confronted with an appetitive stimulus it becomes easier for the neurons downstream to read incoming  signals from other neurons which code for approach.
+
+$\tau_{s}s(t)=-s(t)+\alpha r_{KC}(t)-\beta r_{KC}(t)r_{ON}(t)$
+ 
+$\cfrac{dw}{dt}=R(t)s(t)$
+
+ $R(t) =  \begin{cases} 0\:\mathrm{for\:untrained\:odours}\\-1\:\mathrm{for\:appetitive\:odours}\\+1\:\mathrm{for\:aversive\:odours} \end{cases}$
+ 
+\item We use two fixed thresholds for appetitive and aversive training $\theta_{+}$ and $\theta_{-}$ which are set at 5 and 8 Hz respective.
+If the firing rate of an odour exceeds the threshold we will consider the odour as being classified as being appetitive, or aversive depending on the training protocol. 
+
+\item To test the learning limits of our circuit and the specificity of this 3 factor learning rule we trained 50 odors successively with appetitive training (weights decrese). If the classifier would have been 100\% successful the 60 untrained odours would have stayed above the threshold $\theta_{+}$. However due to similar KC activation among different odours when the connection between 1 KC and the output neuron changes due to an odour this affects how the circuit will respond to other others that share that KC. 
+After training 50 odours we observed that the accuracy is: 70\%.
+
+
+
+\item To quantify how overlap leads to loss of specificity we calculated whether mean odour correlation in either ORN or KC is a good metric for predicting loss of specificity when training an output neuron for a given odour. Our results show that that mean odour correlation is a good metric to predict the probability of a a false positive. 
+
+\item We also compared our learning rule with an SVM for reference purposes . After training with an SVM in the same classification task we observed the accuracy of the SVM was higher. 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
