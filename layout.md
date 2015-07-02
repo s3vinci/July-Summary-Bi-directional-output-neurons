@@ -3,4 +3,3 @@ section_Rate_model_subsection_Studying__.tex
 begin_table_begin_tabular_l__.tex
 Spiking_Model__.tex
 PNs_were_modelled_by_using__.tex
-figures/fun_loving_baytar/fun_loving_baytar.jpg
