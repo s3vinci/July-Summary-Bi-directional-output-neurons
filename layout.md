@@ -1,1 +1,2 @@
 untitled.tex
+section_Rate_model_subsection_Studying__.tex
