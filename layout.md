@@ -1,2 +1,3 @@
 untitled.tex
 section_Rate_model_subsection_Studying__.tex
+begin_table_begin_tabular_l__.tex
