@@ -1,4 +1,5 @@
 untitled.tex
+figures/Figure1_introduction2/Figure1_introduction2.png
 figures/Figure1_introduction1/Figure1_introduction1.png
 section_Rate_model_subsection_Studying__.tex
 begin_table_begin_tabular_l__.tex
