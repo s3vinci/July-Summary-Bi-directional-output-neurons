@@ -16,3 +16,4 @@ Below_we_show_the_simulation__.tex
 figures/a_approach/a_approach.png
 bBi_G_Q_Poo_M__.tex
 frac_dv_dt_v__rest__.tex
+tau__m__.tex
