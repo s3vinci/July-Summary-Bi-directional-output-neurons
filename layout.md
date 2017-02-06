@@ -17,4 +17,4 @@ figures/a_approach/a_approach.png
 bBi_G_Q_Poo_M__.tex
 F_Delta_t_begin_cases__.tex
 frac_dv_dt_v__rest__.tex
-Delta_g__ex_Delta_g___.tex
+Delta_g__inh_Delta_g___.tex
