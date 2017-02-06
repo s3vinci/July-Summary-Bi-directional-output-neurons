@@ -15,6 +15,6 @@ figures/complete_sim_v/complete_sim_v.png
 Below_we_show_the_simulation__.tex
 figures/a_approach/a_approach.png
 bBi_G_Q_Poo_M__.tex
-F_t_begin_cases_0__.tex
+F_t_begin_cases_A__.tex
 frac_dv_dt_v__rest__.tex
 Delta_g__ex_Delta_g___.tex
